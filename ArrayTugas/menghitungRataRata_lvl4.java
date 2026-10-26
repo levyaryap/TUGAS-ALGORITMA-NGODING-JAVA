@@ -1,0 +1,19 @@
+package TugasSemester1.ArrayTugas;
+//perbaikan
+public class menghitungRataRata_lvl4 {
+    public static void main(String[] args) {
+        int[] scores = {80, 70, 90, 60};
+        int total = 0;
+
+        // Menghitung total nilai
+        for (int i = 0; i < scores.length; i++) {
+            total += scores[i];
+        }
+
+        // Menggunakan double agar hasil desimal tidak terpotong
+        double average = (double) total / scores.length;
+
+        System.out.println("Rata-rata: " + average);
+       }
+    }
+
